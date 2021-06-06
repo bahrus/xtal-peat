@@ -7,14 +7,15 @@ Repeating web component that merges a ShadowDOM (or ShadowDOM emulation?) templa
 <template id=shadowDOM>
 <fieldset>
     <legend><slot name=label></slot></legend>
-    <slot name=fields>
-    </slot>
+    <span>Item {{count}}
+    <slot name=fields></slot>
 </fieldset>
 </template>
 
 <ul>
 <xtal-peat tag=li merge=lightChildren into=shadowDOM list='[]'>
     <template id=lightChildren>
+        <templ-model count={{count}}></templ-model>
         <span slot="label">{{description}}</span>
         <my-grid slot=fields></my-grid>
         <my-chart slot=fields></my-chart>
