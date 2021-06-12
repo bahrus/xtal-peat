@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/bahrus/xtal-peat.git"
   },
+  "dependencies": {
+    "xtal-element": "0.0.400"
+  },
   "author": "",
   "license": "MIT",
   "bugs": {

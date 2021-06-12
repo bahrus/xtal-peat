@@ -7,7 +7,7 @@ Repeating web component that merges a ShadowDOM (or ShadowDOM emulation?) templa
 <template id=shadowDOM>
 <fieldset>
     <legend><slot name=label></slot></legend>
-    <span>Item {{count}}
+    <span>Item {{count}}</span>
     <slot name=fields></slot>
 </fieldset>
 </template>
